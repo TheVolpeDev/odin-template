@@ -44,7 +44,7 @@ json_escape() {
 
 
 # Odin installation resolver
-# tries to 
+
 ODIN_PATH="${1:-}"
 
 if [[ -z "$ODIN_PATH" ]] then
