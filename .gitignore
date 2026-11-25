@@ -1,0 +1,21 @@
+# Generated OLS configuration
+ols.json
+
+# Build output
+build/
+bin/
+dist/
+
+# Odin compiler output
+*.obj
+*.o
+*.pdb
+*.bin
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/*.log
