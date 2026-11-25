@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Odin: Build Debug",
+      "type": "shell",
+      "command": "odin",
+      "args": ["build", "src", "-debug"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Odin: Build Release",
+      "type": "shell",
+      "command": "odin",
+      "args": ["build", "src", "-o:speed"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Odin: Run",
+      "type": "shell",
+      "command": "odin",
+      "args": ["run", "src"],
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}
