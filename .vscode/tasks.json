@@ -16,7 +16,12 @@
       "label": "Odin: Build Release",
       "type": "shell",
       "command": "odin",
-      "args": ["build", "src", "-o:speed"],
+      "args": [
+        "build",
+        "src",
+        "-o:speed",
+        "-out:build/${workspaceFolderBasename}"
+      ],
       "group": "build",
       "problemMatcher": []
     },
