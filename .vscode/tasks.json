@@ -11,6 +11,8 @@
         "-debug",
         "-out:build/${workspaceFolderBasename}-debug"
       ],
+      "dependsOn": "Odin: Create Build Directory",
+      "dependsOrder": "sequence",
       "group": {
         "kind": "build",
         "isDefault": true
