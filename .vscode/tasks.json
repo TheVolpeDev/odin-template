@@ -5,7 +5,12 @@
       "label": "Odin: Build Debug",
       "type": "shell",
       "command": "odin",
-      "args": ["build", "src", "-debug"],
+      "args": [
+        "build",
+        "src",
+        "-debug",
+        "-out:build/${workspaceFolderBasename}-debug"
+      ],
       "group": {
         "kind": "build",
         "isDefault": true
