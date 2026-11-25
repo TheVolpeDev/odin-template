@@ -17,6 +17,7 @@ For VSCode, you also need to install the [Odin Language Server extension](https:
 
 > [!NOTE]
 > The setup script will not install Odin or the Odin Language Server
+>
 > It only generates an ols.json file that OLS uses as a configuration file
 
 ---
@@ -83,6 +84,7 @@ This template contains a few preset VSCode Tasks, those being:
 
 > [!NOTE]
 > The tasks invoke the `odin` executable from PATH.
+>
 > If Odin is not available through PATH use the compiler directly or edit `.vscode/tasks.json` to point at your installation
 
 ---
