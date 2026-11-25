@@ -29,6 +29,8 @@
         "-o:speed",
         "-out:build/${workspaceFolderBasename}"
       ],
+      "dependsOn": "Odin: Create Build Directory",
+      "dependsOrder": "sequence",
       "group": "build",
       "problemMatcher": []
     },
