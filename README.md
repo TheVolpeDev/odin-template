@@ -3,7 +3,7 @@
 A minimal project template for the Odin Programming Language with automatic OLS (Odin Language Server) configuration
 
 > [!IMPORTANT]
-> This template is linux first and currently only has support for UNIX based systems (to run scripts/setup.sh)
+> This template is linux first and currently only has support for UNIX based systems (to run `scripts/setup.sh`)
 > A windows option may be added later if someone needs it
 
 ---
@@ -41,7 +41,7 @@ git clone https://github.com/TheVolpeDev/odin-template.git .
 
 ### 2. Configure OLS
 
-You can run the setup script by simply doing `./scripts/setup.sh`
+You can run the setup script by simply running `./scripts/setup.sh`
 
 > [!IMPORTANT]
 > You may need to make the script executable first, in that case you must first run: `chmod +x scripts/setup.sh`
@@ -76,13 +76,14 @@ The first successful supplied path will be used for the configuration
 
 This template contains a few preset VSCode Tasks, those being:
 
-| Task                | Description                                 |
-| ------------------- | ------------------------------------------- |
-| Odin: Build Debug   | Builds the project with debug information   |
-| Odin: Build Release | Builds the project with speed optimizations |
-| Odin: Run           | Runs the project                            |
+| Task                         | Description                                          |
+| ---------------------------- | ---------------------------------------------------- |
+| Odin: Build Debug            | Builds the project with debug information            |
+| Odin: Build Release          | Builds the project with speed optimizations          |
+| Odin: Run                    | Runs the project                                     |
+| Odin: Create Build Directory | Creates the `build` folder, usually not ran manually |
 
-> [!NOTE]
+> [!IMPORTANT]
 > The tasks invoke the `odin` executable from PATH.
 >
 > If Odin is not available through PATH use the compiler directly or edit `.vscode/tasks.json` to point at your installation
@@ -94,6 +95,19 @@ This template contains a few preset VSCode Tasks, those being:
 This repository includes an `odinfmt.json` file to provide default formatting settings
 
 Formatting on save is enabled in the VSCode settings.json file
+
+---
+
+## Building
+
+If you use the preset [Tasks](#vscode-tasks), the build output of your project will be located in `build/`.
+
+**Both** Debug and Release will be compiled into the `build/` directory, there are no subdirectories for debug / release / whatever
+
+> [!NOTE]
+> The compiler output binary will have the same name as your VSCode workspace (the current open folder).
+>
+> The debug build will be suffixed with `-debug` to differentiate it from a Release build
 
 ---
 
