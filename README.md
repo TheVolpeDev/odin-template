@@ -71,6 +71,14 @@ The first successful supplied path will be used for the configuration
 
 ---
 
+## Formatting
+
+This repository includes an `odinfmt.json` file to provide default formatting settings
+
+Formatting on save is enabled in the VSCode settings.json file
+
+---
+
 ## Using Another Editor
 
 This is a VSCode first template, but you can also use other editors.
