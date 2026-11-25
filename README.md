@@ -71,6 +71,22 @@ The first successful supplied path will be used for the configuration
 
 ---
 
+## VSCode Tasks
+
+This template contains a few preset VSCode Tasks, those being:
+
+| Task                | Description                                 |
+| ------------------- | ------------------------------------------- |
+| Odin: Build Debug   | Builds the project with debug information   |
+| Odin: Build Release | Builds the project with speed optimizations |
+| Odin: Run           | Runs the project                            |
+
+> [!NOTE]
+> The tasks invoke the `odin` executable from PATH.
+> If Odin is not available through PATH use the compiler directly or edit `.vscode/tasks.json` to point at your installation
+
+---
+
 ## Formatting
 
 This repository includes an `odinfmt.json` file to provide default formatting settings
